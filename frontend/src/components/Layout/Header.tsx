@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 const StyledHeader = styled.header`
-background-color: red;
+background-color: #f97316;
 padding: 1.2rem 4.8rem;
 
 display: flex;
@@ -12,6 +12,8 @@ justify-content: flex-end;
 
 export default function Header() {
   return (
-    <StyledHeader>Header</StyledHeader>
+    <StyledHeader>
+      Header
+    </StyledHeader>
   )
 }
