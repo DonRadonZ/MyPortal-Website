@@ -14,6 +14,8 @@ const StyledSidebar = styled.aside`
 
 export default function Sidebar() {
   return (
-    <StyledSidebar>Sidebar</StyledSidebar>
+    <StyledSidebar>
+      Sidebar
+    </StyledSidebar>
   )
 }
