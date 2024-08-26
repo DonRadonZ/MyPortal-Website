@@ -80,7 +80,11 @@ Use the built-in continuous integration in GitLab.
 
 * Design layout: Design layout application
     * **Timeline:** 19 August 2024 - 31 August 2024
-    * **Description:** Implement application from planning and design layout of the application for the first version application.
+    * **Description:** Continue implement application from planning and design layout of the application for the first version application from feedback.
+
+* **Design Prototype Phase III:** Update website from feedback
+    *   **Timeline:** 1 September 2024 - 11 September 2024
+    *   **Description:** Design the prototype and make journey about how My Portal has been work.
 
 * First Version: Implement First version of My Portal
     * **Timeline:** 26 August 2024 - 31 September 2024
