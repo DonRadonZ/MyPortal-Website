@@ -8,6 +8,7 @@ import Document from "./screen/Document";
 import Support from "./screen/Support";
 import KnowledgeBase from "./screen/KnowledgeBase";
 import Calendar from "./screen/Calendar";
+import PageNotFound from "./screen/PageNotFound";
 
 
 export default function App() {
@@ -25,9 +26,9 @@ export default function App() {
       <Route path="document" element={<Document/>}/>
       <Route path="knowledgebase" element={<KnowledgeBase/>}/>
       <Route path="support" element={<Support/>} />
-
-
       </Route>
+
+      <Route path="*" element={<PageNotFound/>} />
     </Routes>
     </BrowserRouter>
     </>
