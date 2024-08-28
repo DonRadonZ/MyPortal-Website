@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import HeaderMenu from "./HeaderMenu"
 
 const StyledHeader = styled.header`
 background-color: #f97316;
@@ -13,7 +14,7 @@ justify-content: flex-end;
 export default function Header() {
   return (
     <StyledHeader>
-      Header
+      <HeaderMenu/>
     </StyledHeader>
   )
 }
