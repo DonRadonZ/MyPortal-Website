@@ -43,7 +43,14 @@ const StyledNavLink = styled(NavLink)`
 
 const DropdownLink = styled(NavLink)`
     display: flex;
-    align-items: center;
+        align-items: center;
+        gap: 1.2rem;
+
+        color: var(--color-gray-600);
+        font-size: 1.6rem;
+        font-weight: 500;
+        padding: 1.2rem 2.4rem;
+        transition: all 0.3s;
 `
 
 
@@ -74,7 +81,7 @@ export default function NavListItem({to, icon,label, subNav, iconClosed, iconOpe
         <span>{label}</span>
         {subNav && subnav ? iconOpened : subNav ? iconClosed: null}
     </StyledNavLink>
-    {subnav && subNav.map((item) => (
+    {subnav && subNav.map((item: any) => (
         
             <DropdownLink to={item.to} key={item.label}>
                 {item.label}
