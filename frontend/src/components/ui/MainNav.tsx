@@ -55,7 +55,7 @@ const NAV_LIST_DATA = [
             label: "Form"
         },
         {
-            to: "/reservation/mailandparcel",
+            to: "/mail",
             label: "Mail/Parcel"
         }
       ]
