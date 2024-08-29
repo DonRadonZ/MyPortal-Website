@@ -1,7 +1,8 @@
+import Heading from "../../components/Typography/Heading";
 
 
 export default function Meeting() {
   return (
-    <div>Meeting</div>
+    <Heading>Meeting Reservation</Heading>
   )
 }

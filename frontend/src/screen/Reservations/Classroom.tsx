@@ -1,7 +1,8 @@
+import Heading from "../../components/Typography/Heading";
 
 
 export default function Classroom() {
   return (
-    <div>Classroom</div>
+    <Heading>Classroom Reservation</Heading>
   )
-}
+};
