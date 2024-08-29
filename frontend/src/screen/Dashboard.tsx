@@ -1,7 +1,10 @@
+import Heading from "../components/Typography/Heading";
 
 
 export default function Dashboard() {
   return (
-    <div>Dashboard</div>
+    <>
+    <Heading as="h1">Dashboard</Heading>
+    </>
   )
 }
