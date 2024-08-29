@@ -1,7 +1,16 @@
+import Row from "../components/layout/Row";
+import Heading from "../components/Typography/Heading";
+import KnowledgeOperations from "../feature/knowledgebase/KnowledgeOperations";
+
 
 
 export default function KnowledgeBase() {
   return (
-    <div>KnowledgeBase</div>
+    <>
+    <Row type="horizontal">
+    <Heading as="h1">Knowledge Base</Heading>
+    <KnowledgeOperations/>
+    </Row>
+    </>
   )
 }
