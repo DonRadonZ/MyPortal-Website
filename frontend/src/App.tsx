@@ -9,6 +9,9 @@ import Support from "./screen/Support";
 import KnowledgeBase from "./screen/KnowledgeBase";
 import Calendar from "./screen/Calendar";
 import PageNotFound from "./screen/PageNotFound";
+import Form from "./screen/Tracking/Form";
+import Mail from "./screen/Tracking/Mail";
+import Profile from "./screen/Profile/Profile";
 
 
 export default function App() {
@@ -23,9 +26,12 @@ export default function App() {
       <Route path="calendar" element={<Calendar/>}/>
       <Route path="meeting" element={<Meeting/>}/>
       <Route path="classroom" element={<Classroom/>}/>
+      <Route path="form" element={<Form/>}/>
+      <Route path="mail" element={<Mail/>}/>
       <Route path="document" element={<Document/>}/>
       <Route path="knowledgebase" element={<KnowledgeBase/>}/>
       <Route path="support" element={<Support/>} />
+      <Route path="profile" element={<Profile/>}/>
       </Route>
 
       <Route path="*" element={<PageNotFound/>} />
