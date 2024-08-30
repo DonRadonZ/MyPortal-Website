@@ -2,7 +2,7 @@
 import styled from 'styled-components'
 import NavListItem from './NavListItem'
 import { FaAngleDown, FaAngleUp, FaBook, FaCalendar, FaHandHoldingHeart, FaHome, FaQuestionCircle } from 'react-icons/fa'
-import { HiDocument, HiInbox } from 'react-icons/hi2'
+import { HiDocument, HiEnvelope, HiInbox } from 'react-icons/hi2'
 
 const NavList = styled.ul`
     display: flex;
@@ -46,7 +46,7 @@ const NAV_LIST_DATA = [
     {
       to: "/tracking",
       label: "Tracking",
-      icon:  <HiInbox />,
+      icon:  <HiEnvelope />,
       iconClosed:  <FaAngleDown />,
       iconOpened: <FaAngleUp />,
       subNav: [
