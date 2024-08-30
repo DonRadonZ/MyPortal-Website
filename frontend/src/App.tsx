@@ -12,6 +12,7 @@ import PageNotFound from "./screen/PageNotFound";
 import Form from "./screen/Tracking/Form";
 import Mail from "./screen/Tracking/Mail";
 import Profile from "./screen/Profile/Profile";
+import Test from "./screen/Test";
 
 
 export default function App() {
@@ -32,6 +33,9 @@ export default function App() {
       <Route path="knowledgebase" element={<KnowledgeBase/>}/>
       <Route path="support" element={<Support/>} />
       <Route path="profile" element={<Profile/>}/>
+      <Route path="profile/vaccine" element={<Profile/>}/>
+      <Route path="profile/promoted" element={<Profile/>}/>
+      <Route path="test" element={<Test/>}/>
       </Route>
 
       <Route path="*" element={<PageNotFound/>} />
