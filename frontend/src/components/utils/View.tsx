@@ -1,5 +1,5 @@
-import { useState } from "react";
-import styled, { css } from "styled-components";
+
+import styled, { css } from 'styled-components';
 
 const StyledView = styled.div`
     border: 1px solid var(--color-gray-100);
@@ -12,7 +12,7 @@ const StyledView = styled.div`
 `;
 
 type ViewButtonProps = {
-    active?: any;
+    active?: boolean;
 }
 
 const ViewButton = styled.button<ViewButtonProps>`
@@ -39,33 +39,25 @@ const ViewButton = styled.button<ViewButtonProps>`
 
 interface ViewProps {
     viewField: string;
-    options: Array<{value: string, label: string}>;
+    options: Array<{ value: string, label: string }>;
+    onChangeView: (view: string) => void; // Callback to handle view changes
 }
 
-
-
-function View({viewField, options}:ViewProps) {
-  const [view, setView] = useState(viewField);
-
-  function setActiveView(view: string){
-    setView(view)
-  }
-
-  return (
-    <StyledView>
-        {options.map((option: any) => (
-            <ViewButton
-            key={option.value}
-            active={view === option.value}
-            disabled={view === option.value}
-            onClick={() => setActiveView(option)}
-            >
-                {option.label}
-            </ViewButton>
-        ))}
-        
-    </StyledView>
-  )
+function View({ viewField, options, onChangeView }: ViewProps) {
+    return (
+        <StyledView>
+            {options.map((option) => (
+                <ViewButton
+                    key={option.value}
+                    active={viewField === option.value} // Apply active style if this option is selected
+                    disabled={viewField === option.value} // Disable button if it’s the current view
+                    onClick={() => onChangeView(option.value)} // Handle view change
+                >
+                    {option.label}
+                </ViewButton>
+            ))}
+        </StyledView>
+    );
 }
 
-export default View
+export default View;

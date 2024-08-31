@@ -1,5 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import AppLayout from "./components/layout/AppLayout";
+import AppLayout from "./components/Layout/AppLayout";
 import Dashboard from "./screen/Dashboard";
 import GlobalStyles from "./styles/GlobalStyles";
 import Meeting from "./screen/Reservations/Meeting";
@@ -12,7 +12,7 @@ import PageNotFound from "./screen/PageNotFound";
 import Form from "./screen/Tracking/Form";
 import Mail from "./screen/Tracking/Mail";
 import Profile from "./screen/Profile/Profile";
-import Test from "./screen/Test";
+
 
 
 export default function App() {
@@ -35,7 +35,7 @@ export default function App() {
       <Route path="profile" element={<Profile/>}/>
       <Route path="profile/vaccine" element={<Profile/>}/>
       <Route path="profile/promoted" element={<Profile/>}/>
-      <Route path="test" element={<Test/>}/>
+      
       </Route>
 
       <Route path="*" element={<PageNotFound/>} />
