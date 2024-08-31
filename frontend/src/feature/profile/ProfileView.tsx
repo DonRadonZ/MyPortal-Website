@@ -1,3 +1,4 @@
+// import useViews from "../../hooks/useViews"
 import Coop from "./Coop"
 import Evaluate from "./Evaluate"
 import Overview from "./Overview"
@@ -7,18 +8,39 @@ import TaxCert from "./TaxCert"
 import TeachEval from "./TeachEval"
 import Vaccine from "./Vaccine"
 
+interface ProfileViewProps {
+  view: string;
+}
 
-function ProfileView() {
+function ProfileView({ view }: ProfileViewProps) {
+  // const {view} = useViews('overview');
+
+  function renderContent(){
+    switch(view) {
+      case "overview":
+        return <Overview/>
+      case "vaccine":
+        return <Vaccine/>
+      case "taxcert":
+        return <TaxCert/>
+      case "promotion":
+        return <Promotion/>
+      case "evaluate":
+        return <Evaluate/>
+      case "payrollslip":
+        return <Payroll/>
+      case "coopslip":
+        return <Coop/>
+      case "teacheval":
+        return <TeachEval/>
+      default:
+        return <Overview/>
+    }
+  }
+
   return (
     <div>
-        {view === 'overview' && <Overview />}
-        {view === 'details' && <Vaccine />}
-        {view === 'taxcert' && <TaxCert />}
-        {view === 'promotion' && <Promotion />}
-        {view === 'evaluate' && <Evaluate />}
-        {view === 'evaluate' && <Payroll />}
-        {view === 'evaluate' && <Coop />}
-        {view === 'evaluate' && <TeachEval />}
+        {renderContent()}
     </div>
   )
 }
