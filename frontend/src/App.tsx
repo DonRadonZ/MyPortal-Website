@@ -1,5 +1,5 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
-import AppLayout from "./components/Layout/AppLayout";
+import AppLayout from "./components/layout/AppLayout";
 import Dashboard from "./screen/Dashboard";
 import GlobalStyles from "./styles/GlobalStyles";
 import Meeting from "./screen/Reservations/Meeting";
@@ -9,7 +9,7 @@ import Support from "./screen/Support";
 import KnowledgeBase from "./screen/KnowledgeBase";
 import Calendar from "./screen/Calendar";
 import PageNotFound from "./screen/PageNotFound";
-import Form from "./screen/Tracking/FormTrack";
+import FormTrack from "./screen/Tracking/FormTrack";
 import Mail from "./screen/Tracking/Mail";
 import Profile from "./screen/Profile/Profile";
 
@@ -27,7 +27,7 @@ export default function App() {
       <Route path="calendar" element={<Calendar/>}/>
       <Route path="meeting" element={<Meeting/>}/>
       <Route path="classroom" element={<Classroom/>}/>
-      <Route path="form" element={<Form/>}/>
+      <Route path="form" element={<FormTrack/>}/>
       <Route path="mail" element={<Mail/>}/>
       <Route path="document" element={<Document/>}/>
       <Route path="knowledgebase" element={<KnowledgeBase/>}/>
