@@ -3,7 +3,7 @@ import FormTable from "../../feature/form/FormTable";
 
 
 
-export default function Form() {
+export default function FormTrack() {
   return (
     <>
         <Heading as="h1">Form Tracking</Heading>
