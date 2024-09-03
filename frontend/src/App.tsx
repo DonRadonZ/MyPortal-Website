@@ -9,7 +9,7 @@ import Support from "./screen/Support";
 import KnowledgeBase from "./screen/KnowledgeBase";
 import Calendar from "./screen/Calendar";
 import PageNotFound from "./screen/PageNotFound";
-import Form from "./screen/Tracking/Form";
+import Form from "./screen/Tracking/FormTrack";
 import Mail from "./screen/Tracking/Mail";
 import Profile from "./screen/Profile/Profile";
 
