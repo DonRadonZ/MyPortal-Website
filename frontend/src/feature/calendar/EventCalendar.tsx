@@ -18,7 +18,7 @@ export default function EventCalendar() {
     <StyledCalendar>
     <FullCalendar
     plugins={[ dayGridPlugin ]}
-    height={773}
+    height={665}
     />
     </StyledCalendar>
   )
