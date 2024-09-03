@@ -2,6 +2,7 @@
 import { Table } from '../../components/ui/Table';
 import styled from 'styled-components'
 import { HiEye, HiPencil, HiTrash } from 'react-icons/hi2';
+import Menus from '../../components/ui/Menus';
 
 const Title = styled.div`
     font-size: 1.6rem;
@@ -10,7 +11,8 @@ const Title = styled.div`
 `
 
 type ClassRowProps = {
-    classroom:{id: number;
+    classroom:{
+    id: string;
     created_at: string;
     title: string;
     room: string;
@@ -20,7 +22,7 @@ type ClassRowProps = {
 }
 
 function ClassRow({classroom:{
-    // id: reservationId,
+    id: reservationId,
     created_at,
     title,
     room,
@@ -36,17 +38,26 @@ function ClassRow({classroom:{
         <span>{date}</span>
         <span>{created_at}</span>
         <span>{status}</span>
-        <div>
-            <button>
-                <HiEye/>
-            </button>
-            <button>
-                <HiPencil/>
-            </button>
-            <button>
-                <HiTrash/>
-            </button>
-        </div>
+        <Menus.Menu>
+            <Menus.Toggle id={reservationId}/>
+                <Menus.List id={reservationId}>
+                    <Menus.Button
+                    icon={<HiEye/>}
+                    >
+                        See Detail
+                    </Menus.Button>
+                    <Menus.Button
+                    icon={<HiPencil/>}
+                    >
+                     Edit   
+                    </Menus.Button>
+                    <Menus.Button
+                    icon={<HiTrash/>}
+                    >
+                     Delete  
+                    </Menus.Button>
+                </Menus.List>
+        </Menus.Menu>
     </Table.Row>
   )
 }
