@@ -1,4 +1,20 @@
-# KMUTT Portal
+<div align="center">
+
+<h2>Wild Oasis Website</h2>
+
+</div>
+
+<div align="center">
+<a href="https://www.figma.com/design/iNF0koPxD4OdGFXsrpgQXd/KMUTT-Portal?node-id=0-1&t=djsWuCdrAWskKR3k-1">Design</a>
+•
+<a href="">View Demo</a>
+•
+<a href="">Report Bug</a>
+•
+<a href="">Request new feature</a>
+
+</div>
+
 
 
 
@@ -48,7 +64,7 @@ Use the built-in continuous integration in GitLab.
 ## Description
 <!-- Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors. -->
 
-## Badges
+<!-- ## Badges -->
 <!-- On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge. -->
 
 ## Screenshot 📷
