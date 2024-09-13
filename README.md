@@ -1,6 +1,6 @@
 <div align="center">
 
-<h2>Wild Oasis Website</h2>
+<h2>My Portal</h2>
 
 </div>
 
